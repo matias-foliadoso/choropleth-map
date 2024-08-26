@@ -1,0 +1,109 @@
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial';
+}
+
+main {
+    width: 1000px;
+    padding-top: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+}
+
+#description {
+    text-align: center;
+}
+
+#source {
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tooltip {
+    padding: 10px;
+    position: absolute;
+
+    background: rgba(255, 255, 204, 0.9);
+    opacity: 0;
+    border: 0px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+    
+    font: 12px Arial;
+}
+
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+}
+
+.cell {
+    &:hover {
+        stroke: black;
+        stroke-width: 2;
+    }
+}
+
+.legend-rect {
+    stroke-width: 1;
+    stroke: black;
+}
+
+.title {
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    margin: 80px;
+}
+
+.description {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.axis-description {
+    font-size: 10px;
+    font-family: 'Open Sans';
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: flex;
+}
+
+/*
